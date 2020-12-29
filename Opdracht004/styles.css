@@ -1,0 +1,25 @@
+/*
+    color: rgb(0, 17, 255);
+}
+*/
+.black-border {
+    border: 2px dotted #1818c2;
+    margin: 5%;
+    color rgb(5, 5, 8);
+    text-align: center;
+}
+#green-background {
+    background-color: green;
+}
+nav{
+    background-color: lightgrey;
+}
+h1{
+    color:lightsalmon;
+    max-resolution: top 10mm;
+    background-color: lightyellow;
+    font: 850;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 6px;
+}
