@@ -1,29 +1,86 @@
 <!DOCTYPE html>
- <html>
-        <header>
-               <title> Lego Technic </title>
-        </header>
-        <main>
-            <h1>Overzicht van onze modellen</h1>
-            <h2>Dit zijn de modellen</h2>
-            <hr>Testmodellen.</hr>
-            <p>Dit zijn de modellen die we hebben 
-              <aside>
-                     <nav>
-                            <ol>
-                                   <li>Vrachtwagen</li>
-                                   <li>Bosmaaier</li>
-                                   <li>Kraan</li>
-                            </ol>
-                     </nav>
-              </aside>
-              <a href = "about.html"> Link naar about
-              </a>
-              </p>
-            <hr></hr>
-        </main>
-        <footer>
-           <time datetime='2020-12-27 13:00-0800'>December 27th</time>
-        </footer>
-        <hr></hr>
- </html>
+<html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Contact</title>
+</head>
+
+<body>
+       <form name="contact" method="POST" data-netlify="true">
+              <hr>
+              <form name="contact" method="POST" data-netlify="true">
+                     <!DOCTYPE html>
+                     <html lang="en">
+
+                     <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Contact</title>
+                     </head>
+
+                     <body>
+                            <form name="contact" method="POST" data-netlify="true">
+                                   <p>
+                                          <label>Naam: <input type="text" name="name" /></label>
+                                   </p>
+                                   <p>
+                                          <label>Email: <input type="email" name="email" /></label>
+                                   </p>
+                                   <p>
+                                          <label>Telefoon: <input type="text" name="Telephone" /></label>
+                                   </p>
+                                   <p>
+                                          <label>Leeftijd: <input type="text" name="Age" /></label>
+                                   </p>
+                                   <p>
+                                          <label>Geboortedatum: <input type="date" name="Dateofbirth" /></label>
+                                   </p>
+                                   <p>
+                                          <input type="radio" id="male" name="gender" value="male">
+                                          <label for="male">Man</label><br>
+                                          <input type="radio" id="female" name="gender" value="female">
+                                          <label for="female">Vrouw</label><br>
+                                          <input type="radio" id="other" name="gender" value="other">
+                                          <label for="other">Ander</label>
+                                   </p>
+                                   <p>
+                                          <label> Favoriete cuisine:
+                                                 <input type="checkbox" id="Frans" name="Frans" label for="Frans"> Frans
+                                                 <input type="checkbox" id="Italiaans" name="Italiaans" label
+                                                        for="Italiaans"> Italiaans
+                                                 <input type="checkbox" id="Spaans" name="Spaans" label for="Spaans">
+                                                 Spaans
+                                                 <input type="checkbox" id="Arabisch" name="Arabisch" label
+                                                        for="Arabisch"> Arabisch
+                                          </label>
+                                   </p>
+                                   <p>
+                                          <label for="favcolor">Favoriete kleur short:</label>
+                                          <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                                   </p>
+                                   <p>
+                                          <label>Biografie: <textarea name="biography"></textarea></label>
+                                   </p>
+                                   <label for="myfile">Kies een bestand voor een recept:</label>
+                                   <input type="file" id="recept" name="myfile">
+                                   </p>
+                                   <p>
+                                          <input type="url" name="url" id="url" placeholder="https://voorbeeld.com"
+                                                 pattern="https://.*" size="30" required>
+                                   </p>
+                                   <p>
+                                          <button type="reset">Reset</button>
+                                          <button type="submit">Send</button>
+                                   </p>
+                            </form>
+                     </body>
+
+              </form>
+</body>
+
+</html>
