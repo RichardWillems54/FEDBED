@@ -1,0 +1,20 @@
+.blogpost { 
+    border: 10px solid rgb(228, 253, 0);
+    align-content: flex-end;
+    margin:5px;
+  }
+.flex1 {
+    display:flex;
+    align-self: center;
+    align-content:space-around;
+    margin: 10px;
+}
+.flex2 {
+     text-align-last:  center;
+}
+.flex3 {
+    flex-grow:  100px; 
+}
+.flex4{
+    align-self: flex-start;
+}
