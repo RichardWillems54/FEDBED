@@ -1,0 +1,32 @@
+.link1:hover{
+  color: lightblue; 
+  font-weight: bold; 
+}
+.link2:active{
+    color:red;
+    font-style: italic;
+}
+.link3:visited{
+    color:yellow
+}
+.text:focus{
+    color: green;
+    font-size: 20px;
+}
+.inline{
+    display:inline;
+    margin-right: 10px;
+}
+.donkerblauw{
+    background-color: darkblue;
+}
+.currentpage{
+    background-color: rgb(119, 106, 236);
+}
+.hover:hover{
+    background-color: lightblue;
+}
+.zoek:focus{
+    border:solid aqua;
+    margin:20px
+}
