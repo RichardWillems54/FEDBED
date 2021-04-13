@@ -12,11 +12,11 @@ body {
 .spongebob__button {
   transition: opacity 0.5s;
 }
-.spongebob__button:hover {
-  opacity: 1;
-}
-.spongebob__image:hover {
+.spongebob div:hover {
   opacity: 0;
+}
+.spongebob div:hover__button {
+  opacity: 1;
 }
 .spongebob__button {
   opacity: 0;

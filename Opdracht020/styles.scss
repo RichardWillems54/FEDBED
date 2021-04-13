@@ -11,13 +11,12 @@ body{
 &__button{
     transition:opacity 0.5s;
     }
-&__button:hover{
-    opacity:1;   
-    }
-&__image:hover{
+div:hover{
     opacity:0;
- ;
+    &__button{
+        opacity:1;
     } 
+    }
 &__button {
         opacity:0;
         position: absolute;
