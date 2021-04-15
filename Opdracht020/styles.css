@@ -1,28 +1,43 @@
 body {
   background-color: #c3cfe2;
-  display: block;
+  display: grid;
+}
+
+div {
+  transition: opacity 1s;
 }
 
 .spongebob {
   position: relative;
 }
 .spongebob__image {
-  transition: opacity 0.5s;
+  transition: opacity 1s;
 }
 .spongebob__button {
-  transition: opacity 0.5s;
+  transition: opacity 1s;
 }
-.spongebob div:hover {
+.spongebob__button {
   opacity: 0;
 }
-.spongebob div:hover__button {
+.spongebob__image {
+  transition: opacity 1s;
+}
+.spongebob:hover img {
+  opacity: 0;
+}
+.spongebob:hover button {
+  opacity: 1;
+}
+.spongebob:hover {
+  background-color: mediumseagreen;
+  border-radius: 40px;
   opacity: 1;
 }
 .spongebob__button {
   opacity: 0;
   position: absolute;
-  top: 100px;
-  left: 70px;
+  top: 150px;
+  left: 175px;
   background-color: gray;
   border: solid;
   border-radius: 10px;
@@ -31,4 +46,20 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    grid-template-columns: 500px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  body {
+    grid-template-columns: 500px 500px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  body {
+    grid-template-columns: 500px 500px 500px;
+  }
 }/*# sourceMappingURL=styles.css.map */
