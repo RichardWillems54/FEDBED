@@ -3,8 +3,8 @@ body {
   display: grid;
 }
 
-div {
-  transition: opacity 1s;
+.spongebob {
+  transition: 1s;
 }
 
 .spongebob {
@@ -31,6 +31,7 @@ div {
 .spongebob:hover {
   background-color: mediumseagreen;
   border-radius: 40px;
+  width:500px;
   opacity: 1;
 }
 .spongebob__button {
