@@ -4,7 +4,7 @@ body {
 }
 
 .spongebob {
-  transition: 1s;
+  transition: opacity 1s;
 }
 
 .spongebob {
@@ -31,7 +31,6 @@ body {
 .spongebob:hover {
   background-color: mediumseagreen;
   border-radius: 40px;
-  width:500px;
   opacity: 1;
 }
 .spongebob__button {
