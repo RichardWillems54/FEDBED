@@ -1,8 +1,11 @@
-average = function(gem){
-    avg = ((total(gem)) / gem.length);
+
+const average = function (nums) {
+    avg = nums.reduce((a, b) => (a + b)) / nums.length;
+    console.log(avg);
     return avg;
 }
-var avg;
+let avg;
 var numbers = [5, 9, 8, 1, 6];
+
 average(numbers);
-console.log(avg);
+
