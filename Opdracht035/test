@@ -1,0 +1,10 @@
+const temp = document.querySelector('p');
+console.log(temp)
+
+document.querySelector('p').innerHTML = "Ik ben een nieuwe paragraaf";
+
+let element = document.getElementById('first-section');
+console.log(element);
+
+let temp = document.getElementsByClassName('paragraph')
+console.log(temp)
