@@ -1,46 +1,34 @@
-// Declaration of constants
-var idArray = ["hamburger", "menu", "home", "red", "orange", "purple", "green"];
 
-function ConstDeclare(idArray){
-    const IdArray = document.getElementById(IdArray);
-    alert (idArray);
+const hamburger = document.querySelector('#hamburger');
+const colorMenu = document.querySelector('#menu');
+const home = document.querySelector('#home');
+const red = document.querySelector('#red');
+const orange = document.querySelector('#orange');
+const purple = document.querySelector('#purple');
+const green = document.querySelector('#green');
+
+// Hide Menu
+
+function toggleMenu() {
+    colorMenu.classList.toggle('hidden');
 };
 
-ConstDeclare(idArray);
+// Color Background
 
-showOrHideMenu(hidden);
+function makeBackgroudColor(color){
+    alert (color);
+    document.body.style.backgroundColor = color;
+    toggleMenu();
+};
 
 // Menu toggle
 
-hamburger.addEventListener("mouseover", function (){
-    showOrHideMenu(visible);
-});
+hamburger.addEventListener('click', toggleMenu); 
+hamburger.addEventListener("mouseover", toggleMenu);
+home.addEventListener('click', makeBackgroudColor(gray));
+red.addEventListener('click', makeBackgroudColor(red));
+orange.addEventListener('click', makeBackgroudColor(orange)); 
+purple.addEventListener('click', makeBackgroudColor(purple)); 
+green.addEventListener('click', makeBackgroudColor(green)); 
 
-hamburger.addEventListener("mouseleave", function () {
-    showOrHideMenu(hidden);
-});
 
-hamburger.addEventListener("click", function () {
-    showOrHideMenu(visible);
-});
-
-// Function Show or Hide menu
-
-function showOrHideMenu(showorhide) {
-    menu.style.visibility = showorhide;
-    return;
-};
-
-// Function color the background
-
-function makeBackgroudColor(color){
-    document.body.style.backgroundColor = color;
-    hideMenu(hidden);
-};
-
-// Color toggle events
-
-function addColorEvent(MenuEvent){}
-    MenuEvent.addEventListener("click", function () {
-    makeBackgroudColor(MenuEvent)
-    });

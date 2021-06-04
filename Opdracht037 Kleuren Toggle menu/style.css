@@ -6,6 +6,11 @@
     padding: 3px;
     border-radius: 5px;
 }
+
+.hidden {
+    visibility: hidden;
+}
+
 .Tekst-kleur{
     color: black;
     font-size: 20px;
