@@ -1,38 +1,46 @@
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu");
-const home = document.getElementById("home");
-const rood = document.getElementById("rood");
-const oranje = document.getElementById("oranje");
-const paars = document.getElementById("paars");
-const groen = document.getElementById("groen");
+// Declaration of constants
+var idArray = ["hamburger", "menu", "home", "red", "orange", "purple", "green"];
 
-menu.style.visibility = "hidden";
+function ConstDeclare(idArray){
+    const IdArray = document.getElementById(IdArray);
+    alert (idArray);
+};
 
+ConstDeclare(idArray);
 
-hamburger.addEventListener("mouseover", function () {
-    menu.style.visibility = "visible";
-    home.addEventListener("click", function () {
-        document.body.style.backgroundColor = "gray";
-        menu.style.visibility = "hidden";
-    });
+showOrHideMenu(hidden);
 
-    rood.addEventListener("click", function () {
-        document.body.style.backgroundColor = "red";
-        menu.style.visibility = "hidden";
-    });
+// Menu toggle
 
-    oranje.addEventListener("click", function () {
-        document.body.style.backgroundColor = "orange";
-        menu.style.visibility = "hidden";
-    });
-
-    paars.addEventListener("click", function () {
-        document.body.style.backgroundColor = "purple";
-        menu.style.visibility = "hidden";
-    });
-
-    groen.addEventListener("click", function () {
-        document.body.style.backgroundColor = "green";
-        menu.style.visibility = "hidden";
-    });
+hamburger.addEventListener("mouseover", function (){
+    showOrHideMenu(visible);
 });
+
+hamburger.addEventListener("mouseleave", function () {
+    showOrHideMenu(hidden);
+});
+
+hamburger.addEventListener("click", function () {
+    showOrHideMenu(visible);
+});
+
+// Function Show or Hide menu
+
+function showOrHideMenu(showorhide) {
+    menu.style.visibility = showorhide;
+    return;
+};
+
+// Function color the background
+
+function makeBackgroudColor(color){
+    document.body.style.backgroundColor = color;
+    hideMenu(hidden);
+};
+
+// Color toggle events
+
+function addColorEvent(MenuEvent){}
+    MenuEvent.addEventListener("click", function () {
+    makeBackgroudColor(MenuEvent)
+    });
